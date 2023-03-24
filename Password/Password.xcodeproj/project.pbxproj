@@ -8,22 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		3BF08CE829CD0E6200145013 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF08CE729CD0E6200145013 /* AppDelegate.swift */; };
-		3BF08CEA29CD0E6200145013 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF08CE929CD0E6200145013 /* SceneDelegate.swift */; };
 		3BF08CEC29CD0E6200145013 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF08CEB29CD0E6200145013 /* ViewController.swift */; };
-		3BF08CEF29CD0E6200145013 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BF08CED29CD0E6200145013 /* Main.storyboard */; };
 		3BF08CF129CD0E6400145013 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BF08CF029CD0E6400145013 /* Assets.xcassets */; };
 		3BF08CF429CD0E6400145013 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BF08CF229CD0E6400145013 /* LaunchScreen.storyboard */; };
+		3BF08CFD29CD16A100145013 /* PasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF08CFC29CD16A100145013 /* PasswordTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3BF08CE429CD0E6200145013 /* Password.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Password.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BF08CE729CD0E6200145013 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3BF08CE929CD0E6200145013 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		3BF08CEB29CD0E6200145013 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3BF08CEE29CD0E6200145013 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3BF08CF029CD0E6400145013 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3BF08CF329CD0E6400145013 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3BF08CF529CD0E6400145013 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BF08CFC29CD16A100145013 /* PasswordTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,14 +55,21 @@
 			isa = PBXGroup;
 			children = (
 				3BF08CE729CD0E6200145013 /* AppDelegate.swift */,
-				3BF08CE929CD0E6200145013 /* SceneDelegate.swift */,
 				3BF08CEB29CD0E6200145013 /* ViewController.swift */,
-				3BF08CED29CD0E6200145013 /* Main.storyboard */,
+				3BF08CFC29CD16A100145013 /* PasswordTextField.swift */,
+				3BF08CFB29CD107600145013 /* Files */,
+			);
+			path = Password;
+			sourceTree = "<group>";
+		};
+		3BF08CFB29CD107600145013 /* Files */ = {
+			isa = PBXGroup;
+			children = (
 				3BF08CF029CD0E6400145013 /* Assets.xcassets */,
 				3BF08CF229CD0E6400145013 /* LaunchScreen.storyboard */,
 				3BF08CF529CD0E6400145013 /* Info.plist */,
 			);
-			path = Password;
+			name = Files;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +132,6 @@
 			files = (
 				3BF08CF429CD0E6400145013 /* LaunchScreen.storyboard in Resources */,
 				3BF08CF129CD0E6400145013 /* Assets.xcassets in Resources */,
-				3BF08CEF29CD0E6200145013 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,21 +144,13 @@
 			files = (
 				3BF08CEC29CD0E6200145013 /* ViewController.swift in Sources */,
 				3BF08CE829CD0E6200145013 /* AppDelegate.swift in Sources */,
-				3BF08CEA29CD0E6200145013 /* SceneDelegate.swift in Sources */,
+				3BF08CFD29CD16A100145013 /* PasswordTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		3BF08CED29CD0E6200145013 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3BF08CEE29CD0E6200145013 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		3BF08CF229CD0E6400145013 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,7 +288,6 @@
 				INFOPLIST_FILE = Password/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,7 +315,6 @@
 				INFOPLIST_FILE = Password/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
