@@ -1,5 +1,5 @@
 //
-//  PassportCriteriaView.swift
+//  PasswordCriteriaView.swift
 //  Password
 //
 //  Created by Mitya Kim on 3/24/23.
