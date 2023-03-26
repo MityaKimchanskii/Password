@@ -17,6 +17,9 @@ class ViewController: UIViewController {
     let confirmPasswordTextField = PasswordTextField(placeHolderText: "Re-enter new password")
     let resetButton = UIButton(type: .system)
     
+    // For test alert controller
+    var alert: UIAlertController?
+    
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -182,7 +185,7 @@ extension ViewController {
 // MARK: - Actions
 extension ViewController {
     
-    @objc private func resetPasswordTapped(_ sender: UIButton) {
+    @objc func resetPasswordTapped(_ sender: UIButton) {
         view.endEditing(true)
         
         let isValidNewPassword = newPasswordTextField.validate()
@@ -194,9 +197,22 @@ extension ViewController {
     }
     
     private func showAlert(title: String, message: String) {
-        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        guard let alert else { return }
         alert.addAction(UIAlertAction(title: "Ok", style: .default))
         present(alert, animated: true)
     }
 }
 
+// MARK: - Tests
+extension ViewController {
+    var newPasswordText: String? {
+        get { return newPasswordTextField.text }
+        set { newPasswordTextField.text = newValue }
+    }
+    
+    var confirmPasswordText: String? {
+        get { return confirmPasswordTextField.text }
+        set { confirmPasswordTextField.text = newValue }
+    }
+}
